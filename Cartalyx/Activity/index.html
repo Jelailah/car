@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Cartalyx | Repair on Needs. Anytime, Anyplace</title>
+    </head>
+    <body>
+        <header>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Payment</a>
+    <a href="#">Your Repairs</a>
+    <a href="#">Request Quotation</a>
+    <a href="#">Settings</a>
+  </div>
+</div>
+            
+<span style= "cursor: pointer;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "30%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+        </header>
+        
+           <div id="map">
+      <script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+};
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    </div>
+            
+    </body>
+</html>
